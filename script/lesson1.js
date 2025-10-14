@@ -222,23 +222,186 @@
 // }
 // console.log(letterGrade);
 
-let btn = document.getElementById("changeColorBtn");
-let colorText = document.getElementById("colorCode");
+// let btn = document.getElementById("changeColorBtn");
+// let colorText = document.getElementById("colorCode");
 
-btn.addEventListener("click", () => {
-    let randomColor = getRandomColor();
-    document.body.style.backgroundColor = randomColor;
-    colorText.textContent = randomColor;
-});
+// btn.addEventListener("click", () => {
+//     let randomColor = getRandomColor();
+//     document.body.style.backgroundColor = randomColor;
+//     colorText.textContent = randomColor;
+// });
 
-function getRandomColor() {
-    let letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
+// function getRandomColor() {
+//     let letters = "0123456789ABCDEF";
+//     let color = "#";
+//     for (let i = 0; i < 6; i++) {
+//         color += letters[Math.floor(Math.random() * 16)];
+//     }
+//     return color;
+// }
+// btn.addEventListener("click", () => {
+
+// })
+// let num = 50;
+
+// if (num % 5 === 0) {
+//     summary = "Even"
+// }else {
+//     summary = "Odd"
+// }
+
+
+// document.getElementById("method").innerHTML = summary;
+
+// function checkEvenOrOdd(Number) {
+//     if (Number % 2 === 0) {
+//         return "Even"
+//     }else {
+//         return "Odd"
+//     }
+// }
+// console.log(checkEvenOrOdd(9))
+
+// document.getElementById("method").innerHTML = checkEvenOrOdd(50);
+
+// function ageForVote(age) {
+//     if (age >= 100) {
+//         return "Too old to vote";
+//     }else if (age <= 12) {
+//         return "You don't have right to be here";
+//     }else if (age >= 18) {
+//         return "Verify to Vote"
+//     } 
+//     else {
+//         return "You are a minor not Allow"
+//     }
+// }
+// console.log(ageForVote(20));
+
+// document.getElementById("method").innerHTML = ageForVote(30)
+
+// let a = 30;
+// let b = 20;
+
+// if (a >= b) {
+//     Agree = "Largest"
+// }else {
+//     Agree = "Smallest"
+// }
+// document.getElementById('method').innerHTML = Agree;
+
+// function divisibleNum(num) {
+//     if(num % 5 === 0) {
+//         return "This Number is divisible";
+//     }else{
+//         return "Not divisible by 5";
+//     }
+// }
+// document.getElementById("method").innerHTML = divisibleNum(26)
+
+// function checkedLeapYear(year) {
+//     if (year % 400 === 0) {
+//         return "Leap year";
+//     }else if (year % 100 === 0) {
+//         return "Not a leap year"
+//     }else if (year % 4 === 0) {
+//         return "Leap year"
+//     }else {
+//         return "Not a leap year"
+//     }
+// }
+// document.getElementById("method").innerHTML = checkedLeapYear(1900);
+
+// let a = 10;
+// let b = 80;
+// let c = 20;
+// let result;
+
+// if (a >= b && a >= c) {
+//     result = "a is the largest"
+// }else if(b >= a && b >= c ) {
+//     result = "b is the largest"
+// }else {
+//     result = "c is the largest"
+// }
+// document.getElementById("method").innerHTML = result;
+
+
+// let a = 50;
+// let b = 15;
+// let c = 30;
+
+// let largest = Math.max(a, b, c);
+// document.getElementById("method").innerHTML = largest +" " + "is the largest number"
+
+// function bothDivisibleNum(num) {
+//     if (num % 3 === 0 && num % 7 === 0) {
+//         return "Pass"
+//     }else {
+//         return "Fail"
+//     }
+// }
+// document.getElementById("method").innerHTML = bothDivisibleNum(84)
+
+// function studentGradeScore(score) {
+//     if (score < 0 || score > 100) {
+//         return score + "Invaild score! 0 and 100"
+//     }
+
+//     if (score >= 90) {
+//         return score + " A"
+//     }else if (score >= 80) {
+//         return score + " B"
+//     }else if (score >= 70) {
+//         return score + " C"
+//     }else if (score >= 60) {
+//         return score + " D"
+//     }else {
+//         return score + " F"
+//     }
+// }
+// document.getElementById("method").innerHTML = studentGradeScore(70)
+
+// function checkVowelSound(char) {
+//     char = char.toLowerCase();
+//     const vowels = "aeiou";
+
+//     if (char.length !== 1 || !char.match(/[a-z]/)) {
+//         return "please enter a single alphabet letter.";
+
+//         }
+
+//     if (vowels.includes(char)) {
+//         return char + " is a vowel";
+
+//     }else {
+//         return char + " is a consonant";
+//     }
+// }
+
+// document.getElementById("method").innerHTML = checkVowelSound("");
+
+// function checkNumberSign(num) {
+//     if (num > 0) {
+//         return num + " Positive"
+//     }else if (num < 0) {
+//         return num + " Negative"
+//     }else {
+//         return num + " Zero"
+//     }
+// }
+// document.getElementById("method").innerHTML = checkNumberSign(-190)
+
+let a = 80;
+let b = 50;
+let c = 120;
+let result;
+
+if ((a > b && a < c) || (a > c && a < b)) {
+    result = "a is the middle";
+}else if ((b > a && b < c) || (b > c && b < a )) {
+    result = "b is the middle"
+}else {
+    result = "c is the middle"
 }
-btn.addEventListener("click", () => {
-    
-})
+document.getElementById("method").innerHTML = result
