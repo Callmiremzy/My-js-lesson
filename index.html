@@ -1,70 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style/styles.css">
-    <script src="./script/lesson1.js" defer></script>
-    <script src="./script/dkm.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script src="script/lesson1.js" defer></script>
+  <title>HTML testing</title>
 </head>
 <body>
-  <!-- <h1 id="myH1">Welcome</h1>
-  <label>username</label>
-  <input id="myText"><br><br>
-  <button id="mySubmit">Submit</button> 
-   <h1 id="myH1">Enter the radius of a circle:</h1>
-  <label>Radius</label>
-  <input type="text" id="myText"><br><br>
-  <button id="mySubmit">Submit</button>
-  <h3 id="myH3"></h3>  -->
-
-   <!-- <label id="countLabel">0</label><br>
-   <div id="btnContainer">
-        <button id="decreaseBtn" class="buttons">decreace</button>
-        <button id="resetBtn" class="buttons">reset</button>
-        <button id="increaseBtn" class="buttons">increase</button>
-   </div>  -->
-
-   <!-- <button id="myButton">roll</button>
-   <br>
-   <label id="label1" class="myLabels"></label>
-   <label id="label2" class="myLabels"></label>
-   <label id="label3" class="myLabels"></label> -->
-
-   <!-- <label>Enter your age:</label><br><br>
-    <input type="text" id="myText"><br><br>
-    <button type="submit" id="mySubmit">Submit</button> 
-    <p id="resultElement"></p>  -->
-
-
-<!-- checked = property that determines whether a checkbox or radio button is selected -->
-
-   <!-- <input type="checkbox" id="myCheckbox">
-   <label for="myCheckbox">Subscribe</label> <br><br>
-
-   <input type="radio" id="visaBtn" name="card">
-   <label for="visaBtn">Visa</label><br>
-   <input type="radio" id="mastercardBtn" name="card">
-   <label for="mastercardBtn">Mastercard</label><br>
-   <input type="radio" id="paypalBtn" name="card">
-   <label for="paypalBtn">PayPal</label><br><br>
-
-   <button type="submit" id="mySubmit">Submit</button>
-
-   <p id="subResult"></p>
-   <p id="paymentResult"></p> -->
-   
-<!-- <p>Background Color: <span id="colorCode">White</span> </p>
-<button id="changeColorBtn">Change Color</button>
+<nav id="sidebar">
+  <ul>
+    <li>
+      <span class="logo">RemzyTech</span>
+      <button onclick="toggleSideBar()" id="toggle-btn">
+      <span class="material-symbols-outlined svg">double_arrow</span>
+      </button>
+    </li>
+    <li class="active">
+         
+      <a href="index.html">
+        <span class="material-symbols-outlined svg">home</span>
+        <span class="nav-text">Home</span>
+      </a>
+    </li>
+    <li>
+      <a href="dashboard.html">
+              <span class="material-symbols-outlined svg">dashboard</span>
+        <span class="nav-text">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+       <span class="material-symbols-outlined svg">create_new_folder</span>
+        <span class="nav-text">Create</span>
+        <span class="material-symbols-outlined dropdown-icon svg">arrow_drop_down</span>
+      </button>
+      <ul class="sub-menu">
+        <div>
+        <li><a href="newfile.html">New File</a></li>
+        <li><a href="newfolder.html">New Folder</a></li>
+        <li><a href="upload.html">Upload</a></li>
+        </div>
+      </ul>
+    </li>
+     <li>
+      <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+        <span class="material-symbols-outlined svg">checklist</span>
+        <span class="nav-text">Todo-lists</span>
+        <span class="material-symbols-outlined dropdown-icon svg">arrow_drop_down</span>
+      </button>
+      <ul class="sub-menu">
+       <div>
+         <li><a href="#">Work</a></li>
+        <li><a href="#">Private</a></li>
+        <li><a href="#">Coding</a></li>
+        <li><a href="#">Gardening</a></li>
+        <li><a href="#">School</a></li>
+       </div>
+      </ul>
+    </li>
+    <li>
+      <a href="calender.html">
+          <span class="material-symbols-outlined svg">calendar_month</span>
+        <span class="nav-text">Calender</span>
+      </a>
+    </li>
+    <li>
+      <a href="profile.html">
+          <span class="material-symbols-outlined svg">person</span>
+        <span class="nav-text">Profile</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<main>
+  <div class="container">
+    <h2>Hello world</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores qui, officiis nemo placeat dolorum, reprehenderit doloremque neque nisi culpa sint velit voluptates vitae nulla tenetur dolore vero fugit asperiores eum!</p>
+  </div>
+    <h2>Hello world</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores qui, officiis nemo placeat dolorum, reprehenderit doloremque neque nisi culpa sint velit voluptates vitae nulla tenetur dolore vero fugit asperiores eum!</p>
+  </div>
+    <h2>Hello world</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores qui, officiis nemo placeat dolorum, reprehenderit doloremque neque nisi culpa sint velit voluptates vitae nulla tenetur dolore vero fugit asperiores eum!</p>
+  </div>
+   </div>
+    <h2>Hello world</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores qui, officiis nemo placeat dolorum, reprehenderit doloremque neque nisi culpa sint velit voluptates vitae nulla tenetur dolore vero fugit asperiores eum!</p>
+  </div>
+   </div>
+    <h2>Hello world</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores qui, officiis nemo placeat dolorum, reprehenderit doloremque neque nisi culpa sint velit voluptates vitae nulla tenetur dolore vero fugit asperiores eum!</p>
+  </div>
+   </div>
+    <h2>Hello world</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores qui, officiis nemo placeat dolorum, reprehenderit doloremque neque nisi culpa sint velit voluptates vitae nulla tenetur dolore vero fugit asperiores eum!</p>
+  </div>
+   </div>
+    <h2>Hello world</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores qui, officiis nemo placeat dolorum, reprehenderit doloremque neque nisi culpa sint velit voluptates vitae nulla tenetur dolore vero fugit asperiores eum!</p>
+  </div>
+   </div>
+    <h2>Hello world</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores qui, officiis nemo placeat dolorum, reprehenderit doloremque neque nisi culpa sint velit voluptates vitae nulla tenetur dolore vero fugit asperiores eum!</p>
+  </div>
+   </div>
+    <h2>Hello world</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores qui, officiis nemo placeat dolorum, reprehenderit doloremque neque nisi culpa sint velit voluptates vitae nulla tenetur dolore vero fugit asperiores eum!</p>
+  </div>
+   </div>
+    <h2>Hello world</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores qui, officiis nemo placeat dolorum, reprehenderit doloremque neque nisi culpa sint velit voluptates vitae nulla tenetur dolore vero fugit asperiores eum!</p>
+  </div>
+   </div>
+    <h2>Hello world</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores qui, officiis nemo placeat dolorum, reprehenderit doloremque neque nisi culpa sint velit voluptates vitae nulla tenetur dolore vero fugit asperiores eum!</p>
+  </div>
+   </div>
+    <h2>Hello world</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores qui, officiis nemo placeat dolorum, reprehenderit doloremque neque nisi culpa sint velit voluptates vitae nulla tenetur dolore vero fugit asperiores eum!</p>
+  </div>
+   </div>
+    <h2>Hello world</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores qui, officiis nemo placeat dolorum, reprehenderit doloremque neque nisi culpa sint velit voluptates vitae nulla tenetur dolore vero fugit asperiores eum!</p>
+  </div>
+   </div>
+    <h2>Hello world</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores qui, officiis nemo placeat dolorum, reprehenderit doloremque neque nisi culpa sint velit voluptates vitae nulla tenetur dolore vero fugit asperiores eum!</p>
+  </div>
+</main>
+    
 </body>
-</html>   -->
-
-<!-- From Uiverse.io by vikramsinghnegi --> 
-<!-- <div class="toggle" id="toggleMode">
-  <input type="checkbox" id="modeCheckbox"/>
-  <label for="modeCheckbox"></label>
-</div>
- -->
-
-<p id="method"></p>
+</html>
